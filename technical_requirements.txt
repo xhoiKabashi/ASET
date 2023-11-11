@@ -1,0 +1,73 @@
+Technical requirements for the bus ticket agency app:
+
+1. **Frontend Dependencies:**
+   - **React (v18.2.0):**
+     - The main library for building the user interface.
+   - **Chakra UI (v2.8.2):**
+     - A set of accessible and customizable UI components.
+   - **Emotion (v11.11.1):**
+     - A popular CSS-in-JS library for styling React components.
+   - **Font Awesome (v6.4.2):**
+     - Provides scalable vector icons that can be customized.
+   - **Material-UI (v5.14.17):**
+     - A popular React UI framework.
+   - **Axios (v1.6.0):**
+     - Used for making HTTP requests.
+   - **Blurhash (v2.0.5):**
+     - A blur effect for images that can be used as a placeholder.
+   - **Bootstrap (v5.3.2):**
+     - A front-end framework for designing responsive and attractive web pages.
+   - **Framer Motion (v10.16.4):**
+     - A library for creating smooth animations.
+   - **React Bootstrap (v2.9.1):**
+     - Bootstrap components as React components.
+   - **React Audio Player (v0.17.0):**
+     - A customizable audio player for React.
+   - **React Blurhash (v0.3.0):**
+     - React component for Blurhash.
+   - **React Loader Spinner (v5.4.5):**
+     - A loading spinner component for React.
+   - **React Player (v2.13.0):**
+     - A flexible media player for React.
+   - **React Spotify Web Playback (v0.14.1):**
+     - A React wrapper for the Spotify Web Playback SDK.
+   - **React YouTube (v10.1.0):**
+     - A simple component for embedding YouTube videos.
+   - **Semantic UI (v2.5.0) and Semantic UI React (v2.1.4):**
+     - UI framework and React integration for Semantic UI components.
+   - **UUID (v9.0.1):**
+     - Library for generating unique identifiers.
+
+2. **Backend Dependencies:**
+   - **Express (v4.18.2):**
+     - A minimal and flexible Node.js web application framework.
+   - **Axios (v1.6.0):**
+     - Used for making HTTP requests from the server.
+
+3. **Utility Dependencies:**
+   - **Universal Cookie (v6.1.1):**
+     - Library for handling cookies on both the client and server.
+   - **UUID (v9.0.1):**
+     - Library for generating unique identifiers.
+
+4. **APIs:**
+   - **Weather API(Unknown):**
+     - Used for integrating Weather API
+
+5. **Development and Build Tools:**
+   - **Vite (v4.4.5):**
+     - A build tool that aims to provide a faster and more efficient development experience.
+   - **Eslint (v8.45.0) with React plugins:**
+     - Linting tool for identifying and reporting patterns in JavaScript and React code.
+   - **PostCSS (v8.4.31) and Autoprefixer (v10.4.16):**
+     - Tools for processing CSS.
+   - **React Router DOM (v6.17.0):**
+     - Routing library for React applications.
+   - **Tailwind CSS (v3.3.5):**
+     - Utility-first CSS framework.
+
+6. **Type Definitions:**
+   - **Type definitions for Node, React, and React DOM (v18.2.15, v18.2.7):**
+     - Development-time type checking for JavaScript and React.
+
+These dependencies and tools are crucial for building, styling, and running the bus ticket agency app. It's important to keep the dependencies up to date and follow best practices for security and performance. Additionally, consider implementing proper error handling, user authentication, and authorization features based on the specific requirements of the application.

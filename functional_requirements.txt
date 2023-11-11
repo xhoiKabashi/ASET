@@ -1,3 +1,53 @@
-functional requirements
-done
-saadada
+Functional requirements
+
+1.User Registration and Authentication:
+Users should be able to create accounts and log in securely.
+The system should validate user credentials during the authentication process.
+
+2.Bus Search and Booking:
+Users should be able to search for available bus routes based on criteria such as origin, destination, date, and time.
+The app should display a list of available buses with relevant details such as departure and arrival times, bus type, and fare.
+Users should be able to select a bus, choose seats, and make bookings.
+
+3.Seat Selection and Reservation:
+The app should provide an interactive seat map for each bus, allowing users to select their preferred seats.
+Once seats are selected, they should be temporarily reserved for a limited time during the booking process.
+
+4.Payment Processing:
+The app should support various payment methods (credit/debit cards, digital wallets, etc.).
+Users should receive confirmation of successful payment, and the reservation status should be updated accordingly.
+
+5.Booking History:
+Users should have access to a booking history that displays details of past and upcoming trips.
+The booking history should also include the status of each reservation (e.g., confirmed, pending, canceled).
+
+6.Cancellation and Refund:
+Users should be able to cancel their bookings within a specified time frame.
+The cancellation process should trigger an appropriate refund based on the company's policy.
+
+7.User Notifications:
+The app should send notifications to users for successful bookings, upcoming trips, and any changes to their reservation status.
+Users should have the option to enable/disable specific types of notifications.
+
+8.Route Information:
+Provide detailed information about each bus route, including stops, estimated travel time, and any amenities on board.
+
+9.Feedback and Ratings:
+Allow users to provide feedback and ratings for both the bus services and the app.
+Display average ratings for each bus service to help users make informed decisions.
+
+10.User Profile Management:
+Users should be able to update their profiles, including personal information and password changes.
+The app should securely store and manage user data.
+
+11.Support and Help Center:
+Include a help center or FAQ section to assist users with common queries.
+Provide a support system for users to contact customer service in case of issues or special requests.
+
+12.Accessibility:
+Ensure the app is accessible to users with disabilities by incorporating features like screen reader compatibility and adjustable font sizes.
+
+13.Security:
+Implement secure data transmission and storage practices to protect user information.
+Regularly update and patch the app to address any security vulnerabilities.
+These functional requirements cover essential features for a bus ticket agency app, providing a foundation for a user-friendly and efficient system.

@@ -1,0 +1,33 @@
+.bus {
+    background-image: url('./ImagesLoginScreen/bus.jpg');
+    width: 600px;
+    height: 400px;
+    margin-top: 5px;
+}
+
+.text {
+    color: black;
+    text-shadow: 10px;
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+
+}
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  
+    .bus, .image {
+      display: none;
+
+    }
+}
+

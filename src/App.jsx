@@ -1,3 +1,10 @@
+import Lading from "./components/Lading";
+
 export default function App() {
-  return <h1>Hello, world!</h1>
+  return (
+    <>
+    <Lading/>
+ 
+    </>
+  )
 }

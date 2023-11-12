@@ -1,15 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     MDBBtn,
     MDBContainer,
     MDBRow,
     MDBCol,
-    MDBInput
 }
 
     from 'mdb-react-ui-kit';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
-function RegisterForm() {
+
+const RegisterForm = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        password: '',
+        confirmPassword: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(formData);
+    };
 
     return (
         <MDBContainer className="my-5 gradient-form">
@@ -40,15 +59,61 @@ function RegisterForm() {
 
                         <p className='fs-4'>Register a new account:</p>
 
-                        <MDBInput wrapperClass='mb-4' label='Full name' id='form1' type='fullname' />
-                        <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email' />
-                        <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password' />
-                        <MDBInput wrapperClass='mb-4' label='Confirm Password' id='form2' type='ConfirmPassword' />
+                        <Form onSubmit={handleSubmit}>
+
+                            <Form.Group controlId="formName" className="mb-3">
+                                <Form.Label>Full Name</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Enter your Name"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                />
+                            </Form.Group>
+
+
+                            <Form.Group controlId="formEmail" className="mb-3">
+                                <Form.Label>Email</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Enter your Email Address"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                />
+                            </Form.Group>
+
+                            <Form.Group controlId="formPassword" className="mb-3">
+                                <Form.Label>Password</Form.Label>
+                                <Form.Control
+                                    type="password"
+                                    placeholder="Enter your password"
+                                    name="password"
+                                    value={formData.password}
+                                    onChange={handleChange}
+                                />
+                            </Form.Group>
+
+                            <Form.Group controlId="formconfirmPassword" className="mb-3">
+                                <Form.Label>Password</Form.Label>
+                                <Form.Control
+                                    type="password"
+                                    placeholder="Enter your password"
+                                    name="confirmPassword"
+                                    value={formData.confirmPassword}
+                                    onChange={handleChange}
+                                />
+                            </Form.Group>
+
+                            <Button variant="primary" type="submit" className="mb-4 w-100">
+                                Sign Up
+                            </Button>
+                        </Form>
 
 
 
                         <div className="text-center pt-1 mb-5 pb-1">
-                            <MDBBtn className="mb-4 w-100">Sign up</MDBBtn>
                             <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
                                 <p className="mb-0" >Already have an account?</p>
                                 <MDBBtn outline className='mx-2' color='danger'>

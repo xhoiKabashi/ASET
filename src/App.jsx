@@ -8,7 +8,7 @@ import RegisterForm from "./components/RegisterForm";
 export default function App() {
   return (
        <div>
-                <LoginForm />
+                {/* <LoginForm /> */}
         <RegisterForm />
        </div>
   )

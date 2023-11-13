@@ -1,7 +1,8 @@
+import styles from './Navbar.module.css'
+// are bellow inports are to get the pre styled components
 import { Dropdown, Menu, MenuButton, MenuItem } from '@mui/joy'
 import Icon from '@mdi/react'
 import { mdiTranslate } from '@mdi/js'
-import styles from './Navbar.module.css'
 import DrawerMobileNavigation from './NavbarMobile'
 
 function Navbar() {
@@ -17,7 +18,7 @@ function Navbar() {
           <li>Login</li>
         </ul>
         <div className={styles.none}>
-          <Dropdown className={styles.langContainer}>
+          <Dropdown>
             <MenuButton variant="plain" color="none" size="sm">
               <Icon path={mdiTranslate} size={1} className={styles.langIcon} />
             </MenuButton>

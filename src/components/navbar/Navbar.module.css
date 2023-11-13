@@ -30,20 +30,12 @@
   list-style: none;
   gap: 20px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
 }
 
 .logo {
   height: 35px;
-}
-
-.langContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
 }
 
 .langIcon {

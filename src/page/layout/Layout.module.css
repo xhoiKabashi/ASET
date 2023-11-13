@@ -1,0 +1,6 @@
+/* this div container is to keep navbar top and footer position bottom */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

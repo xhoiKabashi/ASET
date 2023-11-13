@@ -8,6 +8,7 @@
   background-color: #f1f5f9;
   padding: 10px; /* Add padding as needed */
   align-items: center;
+  margin-top: auto;
 }
 .footerLogos {
   display: flex;

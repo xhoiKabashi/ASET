@@ -1,9 +1,14 @@
 export default function Lading() {
   return (
+    <>
+    <div className="bg-[url('/public/hero.jpg')] w-screen h-screen bg-no-repeat bg-cover ">
+        {/* <img className="w-full p-6" src="/public/Landing.jpg"></img> */}
+        <p className=" text-[45px] italic backdrop-blur-md absolute text-white  centered">Low cost bus travel from just €2</p>
+    </div>
     <div className="flex flex-col items-center gap-10 border-t-4 divide-slate-200 p-6">
       <div className="flex flex-row flex-wrap justify-center p-4 gap-8">
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="/public/Tirane.jpg_.webp"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/Tirane.jpg_.webp"></img>
           <h1 className="font-bold text-2xl grid place-content-center">Tirane</h1>
           <p className="p-3">
             Tirana is the capital and largest city of Albania. It is located in the centre of the country, enclosed by
@@ -18,7 +23,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="public/Korca.jpg"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/Korca.jpg"></img>
           <h1 className="font-bold text-2xl grid place-content-center">Korca</h1>
           <p className="p-3">
             Korçë is the eighth most populous city of the Republic of Albania and the seat of Korçë County and Korçë
@@ -33,7 +38,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="/public/gjirokaster.jpg"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/gjirokaster.jpg"></img>
           <h1 className="font-bold  text-2xl grid place-content-center">Gjirokastra</h1>
           <p className="p-3">
             Gjirokastër is a city in southern Albania and the seat of Gjirokastër County and Gjirokastër Municipality.
@@ -48,7 +53,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="public/sarande-albaniatouristplaces.jpg"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/sarande-albaniatouristplaces.jpg"></img>
           <h1 className="font-bold text-2xl grid place-content-center">Saranda</h1>
           <p className="p-3">
             Sarandë (Albanian: [saˈɾandə]; definite form: Saranda; Greek: Άγιοι Σαράντα, romanized: Ágioi Saránta) is a
@@ -64,7 +69,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="/public/vlora.jpg"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/vlora.jpg"></img>
           <h1 className="font-bold  text-2xl grid place-content-center">Vlora</h1>
           <p className="p-3">
             Vlorë (/ˈvlɔːrə/ VLOR-ə,[7][8] Albanian: [ˈvlɔɾə]; definite form: Vlora[c]) is the third most populous city
@@ -79,7 +84,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full md:w-[400px] h-[240px]" src="/public/Shkoder.jpg"></img>
+          <img className="w-full md:w-[400px] h-[240px]" src="/Shkoder.jpg"></img>
           <h1 className="font-bold  text-2xl grid place-content-center">Shkoder</h1>
           <p className="p-3">
             Shkodër historically known as Scodra or Scutari, is the fifth-most-populous city of the Republic of Albania
@@ -94,44 +99,10 @@ export default function Lading() {
           </button>
         </div>
       </div>
-      {/* <div className="flex flex-col md:flex-row gap-8 p-4 items-center">
-        <div className="flex flex-col border-2 gap-4">
-          <img className="w-full  md:w-[374px] h-[240px]" src="/public/vlora.jpg"></img>
-          <h1 className="font-bold grid place-content-center">Vlora</h1>
-          <p className="p-3">
-            Tirana is the capital and largest city of Albania. It is located in the centre of the country, enclosed by
-            mountains and hills with Dajti rising to the east and a slight valley to the northwest overlooking the
-            Adriatic Sea in the distance. Due to its location at the Plain of Tirana and the close proximity to the
-            Mediterranean Sea, the city is particularly influenced by a Mediterranean seasonal climate. It is among the
-            wettest and sunniest cities in Europe, with 2,544 hours of sun per year.
-          </p>
-          <button className="bg-[#1da1f2] text-white hover:bg-sky-700 w-20 h-10 rounded-lg  bottom-1 ml-3 mt-3"> Explore</button>
-        </div>
-        <div className="flex flex-col border-2 gap-4">
-          <img className="w-full  md:w-[374px] h-[240px]" src="/public/gjirokaster.jpg"></img>
-          <h1 className="font-bold grid place-content-center">Gjirokastra</h1>
-          <p className="p-3">
-            Tirana is the capital and largest city of Albania. It is located in the centre of the country, enclosed by
-            mountains and hills with Dajti rising to the east and a slight valley to the northwest overlooking the
-            Adriatic Sea in the distance. Due to its location at the Plain of Tirana and the close proximity to the
-            Mediterranean Sea, the city is particularly influenced by a Mediterranean seasonal climate. It is among the
-            wettest and sunniest cities in Europe, with 2,544 hours of sun per year.
-          </p>
-          <button className="bg-[#1da1f2] text-white hover:bg-sky-700 w-20 h-10 rounded-lg  bottom-1 ml-3 mt-3"> Explore</button>
-        </div>
-        <div className="flex flex-col border-2 gap-4">
-          <img className="w-full md:w-[374px] h-[240px]" src="/public/Shkoder.jpg"></img>
-          <h1 className="font-bold grid place-content-center">Shkoder</h1>
-          <p className="p-3">
-            Tirana is the capital and largest city of Albania. It is located in the centre of the country, enclosed by
-            mountains and hills with Dajti rising to the east and a slight valley to the northwest overlooking the
-            Adriatic Sea in the distance. Due to its location at the Plain of Tirana and the close proximity to the
-            Mediterranean Sea, the city is particularly influenced by a Mediterranean seasonal climate. It is among the
-            wettest and sunniest cities in Europe, with 2,544 hours of sun per year.
-          </p>
-          <button className="bg-[#1da1f2] text-white hover:bg-sky-700 w-20 h-10 rounded-lg  bottom-1 ml-3 mt-3"> Explore</button>
-        </div>
-      </div> */}
     </div>
+
+    </>
+
+
   )
 }

@@ -1,14 +1,14 @@
 export default function Lading() {
   return (
     <>
-    <div className="bg-[url('/public/hero.jpg')] w-screen h-screen bg-no-repeat bg-cover ">
+    <div className="bg-[url('/Image/hero.jpg')] w-screen h-screen bg-no-repeat bg-cover ">
         {/* <img className="w-full p-6" src="/public/Landing.jpg"></img> */}
         <p className=" text-[45px] italic backdrop-blur-md absolute text-white  centered">Low cost bus travel from just €2</p>
     </div>
     <div className="flex flex-col items-center gap-10 border-t-4 divide-slate-200 p-6">
       <div className="flex flex-row flex-wrap justify-center p-4 gap-8">
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="/Tirane.jpg_.webp"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/Image/Tirane.jpg_.webp"></img>
           <h1 className="font-bold text-2xl grid place-content-center">Tirane</h1>
           <p className="p-3">
             Tirana is the capital and largest city of Albania. It is located in the centre of the country, enclosed by
@@ -23,7 +23,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="/Korca.jpg"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/Image/Korca.jpg"></img>
           <h1 className="font-bold text-2xl grid place-content-center">Korca</h1>
           <p className="p-3">
             Korçë is the eighth most populous city of the Republic of Albania and the seat of Korçë County and Korçë
@@ -38,7 +38,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="/gjirokaster.jpg"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/Image/gjirokaster.jpg"></img>
           <h1 className="font-bold  text-2xl grid place-content-center">Gjirokastra</h1>
           <p className="p-3">
             Gjirokastër is a city in southern Albania and the seat of Gjirokastër County and Gjirokastër Municipality.
@@ -53,7 +53,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="/sarande-albaniatouristplaces.jpg"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/Image/sarande-albaniatouristplaces.jpg"></img>
           <h1 className="font-bold text-2xl grid place-content-center">Saranda</h1>
           <p className="p-3">
             Sarandë (Albanian: [saˈɾandə]; definite form: Saranda; Greek: Άγιοι Σαράντα, romanized: Ágioi Saránta) is a
@@ -69,7 +69,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full  md:w-[400px] h-[240px]" src="/vlora.jpg"></img>
+          <img className="w-full  md:w-[400px] h-[240px]" src="/Image/vlora.jpg"></img>
           <h1 className="font-bold  text-2xl grid place-content-center">Vlora</h1>
           <p className="p-3">
             Vlorë (/ˈvlɔːrə/ VLOR-ə,[7][8] Albanian: [ˈvlɔɾə]; definite form: Vlora[c]) is the third most populous city
@@ -84,7 +84,7 @@ export default function Lading() {
           </button>
         </div>
         <div className="flex flex-col w-[400px] border-2 gap-4">
-          <img className="w-full md:w-[400px] h-[240px]" src="/Shkoder.jpg"></img>
+          <img className="w-full md:w-[400px] h-[240px]" src="/Image/Shkoder.jpg"></img>
           <h1 className="font-bold  text-2xl grid place-content-center">Shkoder</h1>
           <p className="p-3">
             Shkodër historically known as Scodra or Scutari, is the fifth-most-populous city of the Republic of Albania

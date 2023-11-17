@@ -1,4 +1,4 @@
-export default function Landing() {
+export default function Lading() {
   return (
     <>
     <div className="bg-[url('/Image/hero.jpg')] w-screen h-screen bg-no-repeat bg-cover ">

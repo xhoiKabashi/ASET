@@ -1,12 +1,12 @@
 import React from "react" 
 import LoginForm from "./components/Loginform";
 import RegisterForm from "./components/RegisterForm";
-import Landing from "./components/Landing";
+import Lading from "./components/Lading";
 
 export default function App() {
   return (
        <div>
-        <Landing />
+        <Lading />
         <LoginForm />
         <RegisterForm />
        </div>

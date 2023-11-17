@@ -1,107 +1,93 @@
-import React, { useState } from 'react';
-import {
-  MDBBtn,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-} from 'mdb-react-ui-kit';
-
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-
+import React from 'react';
+import { useForm } from 'react-hook-form';
 
 const LoginForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-    const [formData, setFormData] = useState({
-      email: '',
-      password: '',
-    });
-
-    const handleChange = (e) => {
-      const { name, value } = e.target;
-      setFormData({ ...formData, [name]: value });
-    };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      console.log(formData);
-    };
-  
-  
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
   return (
-    <MDBContainer className="my-5 gradient-form">
-
-      <MDBRow>
-        <MDBCol col='6' className="mb-5">
-          <div className="login">
-            <div className="d-flex flex-column col1">
-
-              <div className="text-center">
-                <img src="./ImagesLoginScreen/loginn.jpeg"
-                  style={{ width: '185px' }} alt="logo" />
-                <h4 className="mt-3 mb-5 pb-1 fst-italic fw-bold">Albania South East Terminal</h4>
-              </div>
-
-              <p className='text-center fs-4 '>Please login to your account:</p>
-
-<Form onSubmit={handleSubmit}>
-      <Form.Group controlId="formEmail" className="mb-3">
-        <Form.Label>Email</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter your Email Address"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
+    <>
+      <div className="text-center">
+        <img
+          src="./ImagesLoginScreen/loginn.jpeg"
+          className="w-48 mx-auto mb-5 md:w-64 lg:w-80"
+          alt="logo"
         />
-      </Form.Group>
+        <h4 className="mt-3 mb-5 pb-1 text-lg md:text-xl lg:text-2xl italic font-semibold">
+          Albania South East Terminal
+        </h4>
+      </div>
 
-      <Form.Group controlId="formPassword" className="mb-3">
-        <Form.Label>Password</Form.Label>
-        <Form.Control
-          type="password"
-          placeholder="Enter your password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-        />
-      </Form.Group>
+      <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
+        <h2 className="text-xl font-semibold text-left mb-6">Please login to your account:</h2>
 
-      <Button variant="primary" type="submit" className="mb-4 w-100">
-        Sign in
-      </Button>
-    </Form>
-
-
-              <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
-                <p className="mb-0">Don't have an account?</p>
-                <MDBBtn outline className='mx-2' color='danger'>
-                  Register
-                </MDBBtn>
-              </div>
-
-            </div>
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-600">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              {...register('email', {
+                required: 'Email is required',
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                  message: 'Invalid email address',
+                },
+              })}
+              className={`mt-1 p-2 w-full border rounded ${errors.email ? 'border-red-500' : 'border-gray-300 focus:border-blue-500'
+                }`}
+            />
+            {errors.email && (
+              <p className="text-xs text-red-500">{errors.email.message}</p>
+            )}
+          </div>
+          <div>
+            <label htmlFor="password" className="block text-sm font-medium text-gray-600">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              {...register('password', {
+                required: 'Password is required',
+                minLength: {
+                  value: 8,
+                  message: 'Password must be at least 8 characters',
+                },
+              })}
+              className={`mt-1 p-2 w-full border rounded ${errors.password ? 'border-red-500' : 'border-gray-300 focus:border-blue-500'
+                }`}
+            />
+            {errors.password && (
+              <p className="text-xs text-red-500">{errors.password.message}</p>
+            )}
           </div>
 
-        </MDBCol>
-
-        <MDBCol col='6' className="mb-5 image">
-          <div className="d-flex flex-column  justify-content-center h-100 mb-4">
-
-            <div className="text-white px-3 py-4 p-md-5 mx-md-4 bus shadow-lg">
-              {/* <img src="./ImagesLoginScreen/bus.jpg" style={{width: '480px'}} alt="" /> */}
-
-            </div>
-
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-700 focus:outline-none focus:ring focus:border-blue-300"
+          >
+            Sign In
+          </button>
+          <div className="flex flex-col md:flex-row items-center justify-center pb-4 mb-4">
+            <p className="mb-2 md:mb-0 md:mr-2">Don't have an account?</p>
+            <button className="border border-red-500 text-red-500 py-1 px-4 rounded-md hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:border-red-300">
+              Register
+            </button>
           </div>
-
-        </MDBCol>
-
-      </MDBRow>
-
-    </MDBContainer>
+        </form>
+      </div>
+    </>
   );
-}
+};
 
 export default LoginForm

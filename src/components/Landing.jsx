@@ -1,9 +1,9 @@
 export default function Lading() {
   return (
     <>
-    <div className="bg-[url('/Image/hero.jpg')] w-screen h-screen bg-no-repeat bg-cover ">
+    <div className="bg-[url('/Image/hero.jpg')] w-screen flex justify-center bg-no-repeat bg-cover md:bg-center">
         {/* <img className="w-full p-6" src="/public/Landing.jpg"></img> */}
-        <p className=" text-[45px] italic backdrop-blur-md absolute text-white  centered">Low cost bus travel from just €2</p>
+        <p className=" mt-96 mb-24 md:text-[45px] text-4xl italic backdrop-blur-md text-white">Low cost bus travel from just €2</p>
     </div>
     <div className="flex flex-col items-center gap-10 border-t-4 divide-slate-200 p-6">
       <div className="flex flex-row flex-wrap justify-center p-4 gap-8">

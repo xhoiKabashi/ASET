@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.footerContainer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  background-color: #f1f5f9;
+  padding: 10px; /* Add padding as needed */
+  align-items: center;
+  margin-top: auto;
+}
+.footerLogos {
+  display: flex;
+  gap: 30px;
+}
+.footerContact {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  gap: 40px;
+  text-decoration: none;
+}
+.footerContact p {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.footerLogos > div {
+  background-color: #aeaeaf;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+
+.footerLogos div > img {
+  width: 20px;
+  height: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+#fb {
+  height: 20px;
+  width: 15px;
+}
+
+@media (max-width: 750px) {
+  .footerContainer {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerLogos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .footerLogos img {
+    height: 25px;
+    width: 25px;
+  }
+  .footerContact {
+    display: flex;
+    gap: 9px;
+  }
+  .footerContact p {
+    font-size: 13px;
+  }
+}

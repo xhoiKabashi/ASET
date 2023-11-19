@@ -1,4 +1,4 @@
-export default function Lading() {
+export default function Landing() {
   return (
     <>
     <div className="bg-[url('/Image/hero.jpg')] w-screen flex justify-center bg-no-repeat bg-cover md:bg-center">

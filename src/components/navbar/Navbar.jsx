@@ -4,18 +4,22 @@ import { Dropdown, Menu, MenuButton, MenuItem } from '@mui/joy'
 import Icon from '@mdi/react'
 import { mdiTranslate } from '@mdi/js'
 import DrawerMobileNavigation from './NavbarMobile'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
     <div className={styles.container}>
       <DrawerMobileNavigation className={styles.DrawerMobileNavigation} />
-      <img src="./bus-logo.png" alt="" className={styles.logo} />
+      <Link to="/" className={styles.logoLink}>
+        <img src="./bus-logo.png" alt="" className={styles.logo} />
+      </Link>
       <nav className={styles.nav}>
         <ul className={styles.list}>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>My reservations</li>
-          <li>Login</li>
+          <Link to="/">Home</Link>
+          <Link to="about-us">About Us</Link>
+          <Link to="my-reservations">My reservations</Link>
+
+          <Link to="login">Login</Link>
         </ul>
         <div className={styles.none}>
           <Dropdown>

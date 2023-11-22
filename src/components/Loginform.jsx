@@ -1,25 +1,20 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form'
 
 const LoginForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm()
 
   const onSubmit = (data) => {
-    console.log(data);
-  };
+    console.log(data)
+  }
 
   return (
     <>
       <div className="text-center">
-        <img
-          src="./ImagesLoginScreen/loginn.jpeg"
-          className="w-48 mx-auto mb-5 md:w-64 lg:w-80"
-          alt="logo"
-        />
+        <img src="./ImagesLoginScreen/loginn.jpeg" className="w-48 mx-auto mb-5 md:w-64 lg:w-80" alt="logo" />
         <h4 className="mt-3 mb-5 pb-1 text-lg md:text-xl lg:text-2xl italic font-semibold">
           Albania South East Terminal
         </h4>
@@ -43,12 +38,11 @@ const LoginForm = () => {
                   message: 'Invalid email address',
                 },
               })}
-              className={`mt-1 p-2 w-full border rounded ${errors.email ? 'border-red-500' : 'border-gray-300 focus:border-blue-500'
-                }`}
+              className={`mt-1 p-2 w-full border rounded ${
+                errors.email ? 'border-red-500' : 'border-gray-300 focus:border-blue-500'
+              }`}
             />
-            {errors.email && (
-              <p className="text-xs text-red-500">{errors.email.message}</p>
-            )}
+            {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
           </div>
           <div>
             <label htmlFor="password" className="block text-sm font-medium text-gray-600">
@@ -64,12 +58,11 @@ const LoginForm = () => {
                   message: 'Password must be at least 8 characters',
                 },
               })}
-              className={`mt-1 p-2 w-full border rounded ${errors.password ? 'border-red-500' : 'border-gray-300 focus:border-blue-500'
-                }`}
+              className={`mt-1 p-2 w-full border rounded ${
+                errors.password ? 'border-red-500' : 'border-gray-300 focus:border-blue-500'
+              }`}
             />
-            {errors.password && (
-              <p className="text-xs text-red-500">{errors.password.message}</p>
-            )}
+            {errors.password && <p className="text-xs text-red-500">{errors.password.message}</p>}
           </div>
 
           <button
@@ -79,7 +72,7 @@ const LoginForm = () => {
             Sign In
           </button>
           <div className="flex flex-col md:flex-row items-center justify-center pb-4 mb-4">
-            <p className="mb-2 md:mb-0 md:mr-2">Don't have an account?</p>
+            <p className="mb-2 md:mb-0 md:mr-2">Don`t have an account?</p>
             <button className="border border-red-500 text-red-500 py-1 px-4 rounded-md hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:border-red-300">
               Register
             </button>
@@ -87,7 +80,7 @@ const LoginForm = () => {
         </form>
       </div>
     </>
-  );
-};
+  )
+}
 
 export default LoginForm

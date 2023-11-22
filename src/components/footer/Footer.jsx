@@ -27,7 +27,7 @@ function Footer() {
               <p>Privacy</p>
             </Link>
 
-            <Link to="termsandconditions">
+            <Link to="termsandconditions" >
               <p>General conditions</p>
             </Link>
           </div>

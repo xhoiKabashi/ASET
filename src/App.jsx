@@ -5,6 +5,7 @@ import Landing from './components/Landing'
 import './index.css'
 import Layout from './page/layout/Layout'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import Privacy from './components/footer/Privacy'
 
 // rooter to navigate between pages
 const router = createBrowserRouter(
@@ -13,6 +14,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Landing />} />
       <Route path="login" element={<LoginForm />} />
       <Route path="register" element={<RegisterForm />} />
+      <Route path='privacy' element={<Privacy/>} />
       {/* ... etc. */}
     </Route>
   )
